@@ -1,0 +1,52 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+body {
+    height: 2100px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.header_video {
+    position: relative;
+    overflow: hidden;
+    filter: brightness(50%);
+}
+
+.main_header {
+    z-index: 100;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    font-family: 'Abril Fatface';
+    font-size: 200px;
+    color: white;
+}
+
+#header_nav {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+}
+
+ul li {
+    position: relative;
+    left: 38%;
+    float: left;
+    color: white;
+    list-style: none;
+    padding: 0 20px;
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
