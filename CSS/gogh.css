@@ -36,6 +36,7 @@
 .goghName {
     width: 600px;
     font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
     color: white;
     opacity: 0;
     animation: animation 2s both;
