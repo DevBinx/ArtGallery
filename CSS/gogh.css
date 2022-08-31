@@ -1,0 +1,63 @@
+.goghProfile {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.goghProfile>img {
+    position: relative;
+    top: 30px;
+    width: 30%;
+    float: left;
+    z-index: 10;
+}
+
+.goghText {
+    float: left;
+    margin-top: 80px;
+    margin-left: 20px;
+    width: 800px;
+    height: 300px;
+    text-align: left;
+}
+
+@keyframes animation {
+    from {
+
+    }
+
+    to {
+        transform:translateX(55%);
+        opacity: 1;
+    }
+}
+
+
+.goghName {
+    width: 600px;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: white;
+    opacity: 0;
+    animation: animation 2s both;
+    margin-left: -300px;
+}
+
+
+
+.gogh-header {
+    width: 600px;
+    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+    color: white;
+    opacity: 0;
+    animation: animation 3s both;
+    margin-left: -300px;
+}
+
+.goghAge {
+    width: 600px;
+    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+    color: white;
+    opacity: 0;
+    animation: animation 3.8s both;
+    margin-left: -300px;
+}
