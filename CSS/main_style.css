@@ -39,6 +39,8 @@ body {
     top: 3%;
 }
 
+
+
 #header_nav {
     z-index: 10;
     position: relative;
@@ -52,19 +54,34 @@ body {
     background-color: #000;
 }
 
+#header_nav>ul>li>a {
+    transition-duration: 0.5s;
+    color: #dfdfdf;
+}
+
+#header_nav>ul>li>a:hover {
+    color: white;
+}
+
+.p-artgallery {
+    position: absolute;
+    font-family: 'Abril Fatface';
+    font-size: 24px;
+}
+
+.p-artgallery>a {
+    color: white;
+}
+
 ul li {
     position: relative;
     float: left;
-    color: white;
+    color: #dfdfdf;
     list-style: none;
     padding: 0 20px;
     font-size: 12px;
     font-family: 'Noto Sans KR', sans-serif;
     left: 31%;
-}
-
-a {
-    color: #fff;
 }
 
 .p_Mainheader {
