@@ -15,11 +15,31 @@
             <!-- 애플고딕 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
         <script src="../jQuery/jQuery-3.6.1.js"></script>
         <script>
             $(document).ready(function(){
-                $("#header_nav").load("header_nav.html")
+                $("#header_nav").load("header_nav.html");
             });
+        </script>
+        <script type="text/javascript">
+            function imgSlide() {
+                var img = document.getElementById("tomato");
+                document.getElementById("tomato").classList.remove("rollback");
+                img.classList.add("slide");
+                document.getElementById("tomato_content").classList.add("content");
+                document.getElementById("tomato_content").style.display="block";
+                document.getElementById("all_can").classList.add("down");
+                document.getElementById("all_can").style.display="block";
+            }
+
+            function rollback() {
+                document.getElementById("tomato").classList.add("rollback");
+            }
         </script>
     </head>
     <body>
@@ -39,5 +59,27 @@
                 <p class="andyAge" style="font-size: 14px;">1928.08.06 ~ 1987.02.22 (Age 58)</p>
             </div>
         </div>
+        <div data-aos="fade-down">
+        <div class="soup">
+            <div id="tomato">
+                <img src="../IMAGE/soup-tomato.jpg" alt="soup-tomato" class="tomatoImg" onclick="imgSlide()">
+            </div>
+            <div id="tomato_content">
+                <p>
+                    캠벨 수프 통조림은 미국의 팝 아티스트 앤디 워홀의 예술 작품이다. <br>
+                    이 작품은 1961년 11월부터 1962년 3월 또는 4월에 제작된 것으로 알려져 있다. <br>
+                    이 작품은 높이 20인치, 너비 16인치의 캠벨 수프 사가 당시 제조하던 32가지 종류의 통조림을 캔버스에 그려낸 것이었다. <br>
+                </p>
+            </div>
+            <div id="all_can">
+                <img src="../IMAGE/all-soupcan.jpg" alt="">
+            </div>
+        </div>
+        
+        </div>
+        <script> 
+            AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+        </script>
+        
     </body>
 </html>
