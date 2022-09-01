@@ -1,168 +1,366 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-@media (min-width: 800px) {
+@media(min-width: 1000px) {
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
     
-}
-
-html {
-    width: 1300px;
-    margin: 0 auto;
-}
-
-body {
-    height: 3000px;
-    margin: 0 auto;
-    padding: 0;
-    background-color: #000;
-}
-
-
-.header_video {
-    position: relative;
-    overflow: hidden;
-    filter: brightness(50%);
-    width: 100%;
-    bottom: 15%;
-}
-
-.main_header {
-    z-index: 10;
-    position: relative;
-    font-family: 'Abril Fatface';
-    font-size: 80px;
-    color: white;
-    text-align: center;
-    width: 100%;
-    height: 240px;
-    line-height: 240px;
-    top: 3%;
+    html {
+        width: 1300px;
+        margin: 0 auto;
+    }
     
+    body {
+        height: 3000px;
+        margin: 0 auto;
+        padding: 0;
+        background-color: #000;
+    }
+    
+    
+    .header_video {
+        position: relative;
+        overflow: hidden;
+        filter: brightness(50%);
+        width: 100%;
+        bottom: 15%;
+    }
+    
+    .main_header {
+        z-index: 10;
+        position: relative;
+        font-family: 'Abril Fatface';
+        font-size: 80px;
+        color: white;
+        text-align: center;
+        width: 100%;
+        height: 240px;
+        line-height: 240px;
+        top: 3%;
+        
+    }
+    
+    
+    
+    #header_nav {
+        z-index: 10;
+        position: relative;
+        width: 100%;
+        height: 48px;
+        line-height: 48px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+    }
+    
+    #header_nav>ul>li>a {
+        transition-duration: 0.5s;
+        color: #dfdfdf;
+    }
+    
+    #header_nav>ul>li>a:hover {
+        color: white;
+    }
+    
+    .p-artgallery {
+        position: absolute;
+        font-family: 'Abril Fatface';
+        font-size: 24px;
+    }
+    
+    .p-artgallery>a {
+        color: white;
+    }
+    
+    ul li {
+        position: relative;
+        float: left;
+        color: #dfdfdf;
+        list-style: none;
+        padding: 0 20px;
+        font-size: 12px;
+        font-family: 'Helvetica 35 thin', sans-serif;
+        left: 31%;
+    }
+    
+    .p_Mainheader {
+        position: relative;
+        color: #fff;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 48px;
+        text-align: center;
+        bottom: 13%;
+    }
+    
+    .Sunflowers {
+        position: relative;
+        bottom: 200px;
+        width: 200px;
+        text-align: center;
+        right: 40px;
+        margin: 0 auto;
+        transition-duration: 2s;
+        transform: scale(1.0);
+    }
+    
+    .Sunflowers:hover {
+        transform: scale(1.3);
+    }
+    
+    .p_Sunflowers {
+        position: relative;
+        width: 300px;
+        color:#fff;
+        opacity: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: center;
+        left: 280px;
+        bottom: 200px;
+        transition-duration: 2s;
+    }
+    
+    .Sunflowers:hover .p_Sunflowers {
+        transform: scale(1.3), translateY(-200%);
+        transition-delay: 1.5s;
+        transition-duration: 1.5s;
+        opacity: 1;
+        color:#fff;
+    }
+    
+    .Monarisa {
+        position: relative;
+        bottom: 100px;
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        right: 40px;
+        transition-duration: 2s;
+        transform: scale(1.0);
+    }
+    
+    .Monarisa:hover {
+        transform: scale(1.3);
+    }
+    
+    .p_Monarisa {
+        position: relative;
+        left: 280px;
+        bottom: 250px;
+        width: 300px;
+        color:#fff;
+        opacity: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: center;
+        transition-duration: 2s;
+    }
+    
+    .Monarisa:hover .p_Monarisa {
+        transform: scale(1.3), translateY(-200%);
+        transition-delay: 1.5s;
+        transition-duration: 1.5s;
+        opacity: 1;
+        color:#fff;
+    }
 }
 
 
 
-#header_nav {
-    z-index: 10;
-    position: relative;
-    width: 100%;
-    height: 48px;
-    line-height: 48px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000;
-}
+/*
+400px 반응형
+*/
 
-#header_nav>ul>li>a {
-    transition-duration: 0.5s;
-    color: #dfdfdf;
-}
+@media(max-width: 1000px) {
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    
+    html {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    body {
+        height: 3000px;
+        margin: 0 auto;
+        padding: 0;
+        background-color: #000;
+    }
+    
+    
+    .header_video {
+        width: 100%;
+        position: relative;
+        filter: brightness(50%);
+        bottom: 165px;
+    }
+    
+    .main_header {
+        z-index: 10;
+        position: relative;
+        font-family: 'Abril Fatface';
+        font-size: 80px;
+        color: white;
+        text-align: center;
+        width: 100%;
+        height: 240px;
+        line-height: 240px;
+        top: 7%;
+        
+    }
+    
+    
+    
+    #header_nav {
+        z-index: 10;
+        position: relative;
+        width: 100%;
+        height: 180px;
+        line-height: 180px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        text-align: center;
+    }
 
-#header_nav>ul>li>a:hover {
-    color: white;
-}
+    #header_nav>ul {
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        top: 60%;
+        position: relative;
+        text-align: center;
+        opacity: 0;
+        transition: 1s;
+        animation: downNav 1s both;
+        background-color: black;
+    }
 
-.p-artgallery {
-    position: absolute;
-    font-family: 'Abril Fatface';
-    font-size: 24px;
-}
+    @keyframes downNav {
+        from {
 
-.p-artgallery>a {
-    color: white;
-}
+        }
 
-ul li {
-    position: relative;
-    float: left;
-    color: #dfdfdf;
-    list-style: none;
-    padding: 0 20px;
-    font-size: 12px;
-    font-family: 'Helvetica 35 thin', sans-serif;
-    left: 31%;
-}
+        to {
+            opacity: 1;
+        transform: translateY(85%);
+        }
+    }
+    
+    #header_nav>ul>li>a {
+        transition-duration: 0.5s;
+        color: #dfdfdf;
+        font-size: 24px;
+    }
 
-.p_Mainheader {
-    position: relative;
-    color: #fff;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 48px;
-    text-align: center;
-    bottom: 13%;
-}
-
-.Sunflowers {
-    position: relative;
-    bottom: 200px;
-    width: 200px;
-    text-align: center;
-    right: 40px;
-    margin: 0 auto;
-    transition-duration: 2s;
-    transform: scale(1.0);
-}
-
-.Sunflowers:hover {
-    transform: scale(1.3);
-}
-
-.p_Sunflowers {
-    position: relative;
-    width: 300px;
-    color:#fff;
-    opacity: 0;
-    font-family: 'Noto Sans KR', sans-serif;
-    text-align: center;
-    left: 280px;
-    bottom: 200px;
-    transition-duration: 2s;
-}
-
-.Sunflowers:hover .p_Sunflowers {
-    transform: scale(1.3), translateY(-200%);
-    transition-delay: 1.5s;
-    transition-duration: 1.5s;
-    opacity: 1;
-    color:#fff;
-}
-
-.Monarisa {
-    position: relative;
-    bottom: 100px;
-    width: 200px;
-    margin: 0 auto;
-    text-align: center;
-    right: 40px;
-    transition-duration: 2s;
-    transform: scale(1.0);
-}
-
-.Monarisa:hover {
-    transform: scale(1.3);
-}
-
-.p_Monarisa {
-    position: relative;
-    left: 280px;
-    bottom: 250px;
-    width: 300px;
-    color:#fff;
-    opacity: 0;
-    font-family: 'Noto Sans KR', sans-serif;
-    text-align: center;
-    transition-duration: 2s;
-}
-
-.Monarisa:hover .p_Monarisa {
-    transform: scale(1.3), translateY(-200%);
-    transition-delay: 1.5s;
-    transition-duration: 1.5s;
-    opacity: 1;
-    color:#fff;
+    #header_nav>ul>li {
+        height: 60px;
+        line-height: 60px;
+        margin-left: 25px;
+        float: left;
+        color: #dfdfdf;
+        list-style: none;
+        padding: 0 20px;
+        font-size: 12px;
+        font-family: 'Helvetica 35 thin', sans-serif;
+    }
+    
+    #header_nav>ul>li>a:hover {
+        color: white;
+    }
+    
+    .p-artgallery {
+        position: absolute;
+        font-family: 'Abril Fatface';
+        font-size: 48px;
+        left: 35%;
+    }
+    
+    .p-artgallery>a {
+        color: white;
+    }
+    
+    .p_Mainheader {
+        position: relative;
+        color: #fff;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 48px;
+        text-align: center;
+        top: 0;
+    }
+    
+    .Sunflowers {
+        position: relative;
+        top: 10%;
+        width: 200px;
+        text-align: center;
+        right: 40px;
+        margin: 0 auto;
+        transition-duration: 2s;
+        transform: scale(1.0);
+    }
+    
+    .Sunflowers:hover {
+        transform: scale(1.3);
+    }
+    
+    .p_Sunflowers {
+        position: relative;
+        width: 300px;
+        color:#fff;
+        opacity: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: center;
+        left: 10px;
+        top: 40px;
+        transition-duration: 2s;
+    }
+    
+    .Sunflowers:hover .p_Sunflowers {
+        transform: scale(1.3), translateY(-200%);
+        transition-delay: 1.5s;
+        transition-duration: 1.5s;
+        opacity: 1;
+        color:#fff;
+    }
+    
+    .Monarisa {
+        position: relative;
+        top: 15%;
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        right: 40px;
+        transition-duration: 2s;
+        transform: scale(1.0);
+    }
+    
+    .Monarisa:hover {
+        transform: scale(1.3);
+    }
+    
+    .p_Monarisa {
+        position: relative;
+        left: 10px;
+        top: 40px;
+        width: 300px;
+        color:#fff;
+        opacity: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: center;
+        transition-duration: 2s;
+    }
+    
+    .Monarisa:hover .p_Monarisa {
+        transform: scale(1.3), translateY(-200%);
+        transition-delay: 1.5s;
+        transition-duration: 1.5s;
+        opacity: 1;
+        color:#fff;
+    }
 }
