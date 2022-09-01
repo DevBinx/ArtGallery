@@ -261,7 +261,8 @@
     #header_nav>ul>li {
         height: 60px;
         line-height: 60px;
-        margin-left: 30px;
+        position: relative;
+        left: 5%;
         float: left;
         color: #dfdfdf;
         list-style: none;
