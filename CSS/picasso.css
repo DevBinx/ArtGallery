@@ -1,63 +1,138 @@
-.picassoProfile {
-    width: 100%;
-    height: 600px;
-    margin: 0 auto;
-}
-
-.picassoProfile>img {
-    position: relative;
-    top: 30px;
-    width: 30%;
-    float: left;
-    z-index: 10;
-}
-
-.picassoText {
-    float: left;
-    margin-top: 80px;
-    margin-left: 20px;
-    width: 800px;
-    height: 300px;
-    text-align: left;
-}
-
-@keyframes animation {
-    from {
-
+@media (min-width: 400px) {
+    .picassoProfile {
+        width: 100%;
+        height: 600px;
+        margin: 0 auto;
     }
-
-    to {
-        transform:translateX(55%);
-        opacity: 1;
+    
+    .picassoProfile>img {
+        position: relative;
+        top: 30px;
+        width: 30%;
+        float: left;
+        z-index: 10;
+    }
+    
+    .picassoText {
+        float: left;
+        margin-top: 80px;
+        margin-left: 20px;
+        width: 800px;
+        height: 300px;
+        text-align: left;
+    }
+    
+    @keyframes animation {
+        from {
+    
+        }
+    
+        to {
+            transform:translateX(55%);
+            opacity: 1;
+        }
+    }
+    
+    
+    .picassoName {
+        width: 600px;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        color: white;
+        opacity: 0;
+        animation: animation 2s both;
+        margin-left: -300px;
+    }
+    
+    
+    
+    .picasso-header {
+        width: 600px;
+        font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+        color: white;
+        opacity: 0;
+        animation: animation 3s both;
+        margin-left: -300px;
+    }
+    
+    .picassoAge {
+        width: 600px;
+        font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+        color: white;
+        opacity: 0;
+        animation: animation 3.8s both;
+        margin-left: -300px;
     }
 }
 
-
-.picassoName {
-    width: 600px;
-    font-family: 'Helvetica Neue', sans-serif;
-    color: white;
-    opacity: 0;
-    animation: animation 2s both;
-    margin-left: -300px;
+@media (max-width: 1000px) {
+    .picassoProfile {
+        width: 100%;
+        height: 600px;
+        margin: 0 auto;
+        position: relative;
+        top: 80px;
+    }
+    
+    .picassoProfile>img {
+        position: relative;
+        top: 100px;
+        left: 50px;
+        width: 30%;
+        float: left;
+        z-index: 10;
+        width: 400px;
+    }
+    
+    .picassoText {
+        float: left;
+        margin-top: 130px;
+        margin-left: 20px;
+        width: 800px;
+        height: 300px;
+        text-align: left;
+    }
+    
+    @keyframes animation {
+        from {
+    
+        }
+    
+        to {
+            transform:translateX(105%);
+            opacity: 1;
+        }
+    }
+    
+    
+    .picassoName {
+        width: 600px;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        color: white;
+        opacity: 0;
+        animation: animation 2s both;
+        margin-left: -600px;
+    }
+    
+    
+    
+    .picasso-header {
+        width: 600px;
+        font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+        color: white;
+        opacity: 0;
+        animation: animation 3s both;
+        margin-left: -600px;
+    }
+    
+    .picassoAge {
+        width: 600px;
+        font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+        color: white;
+        opacity: 0;
+        animation: animation 3.8s both;
+        margin-left: -600px;
+    }
 }
 
-
-
-.picasso-header {
-    width: 600px;
-    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
-    color: white;
-    opacity: 0;
-    animation: animation 3s both;
-    margin-left: -300px;
-}
-
-.picassoAge {
-    width: 600px;
-    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
-    color: white;
-    opacity: 0;
-    animation: animation 3.8s both;
-    margin-left: -300px;
-}
