@@ -23,7 +23,8 @@
         overflow: hidden;
         filter: brightness(50%);
         width: 100%;
-        bottom: 15%;
+        height: 500px;
+        bottom: 5%;
     }
     
     .main_header {
@@ -36,7 +37,7 @@
         width: 100%;
         height: 240px;
         line-height: 240px;
-        top: 3%;
+        top: 80px;
         
     }
     
@@ -91,12 +92,12 @@
         font-family: 'Noto Sans KR', sans-serif;
         font-size: 48px;
         text-align: center;
-        bottom: 13%;
+        bottom: 200px;
     }
     
     .Sunflowers {
         position: relative;
-        bottom: 200px;
+        top: 100px;
         width: 200px;
         text-align: center;
         right: 40px;
@@ -131,7 +132,7 @@
     
     .Monarisa {
         position: relative;
-        bottom: 100px;
+        top: 200px;
         width: 200px;
         margin: 0 auto;
         text-align: center;
@@ -208,7 +209,7 @@
         width: 100%;
         height: 240px;
         line-height: 240px;
-        top: 7%;
+        top: 4%;
         
     }
     
@@ -262,7 +263,7 @@
         height: 60px;
         line-height: 60px;
         position: relative;
-        left: 5%;
+        left: 70px;
         float: left;
         color: #dfdfdf;
         list-style: none;
