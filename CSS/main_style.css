@@ -223,30 +223,71 @@
         filter: opacity(1);
     }
 
+    .video {
+        position: absolute;
+        width: 100%;
+        top: 600px;
+        height: 600px;
+    }
+
     .video>.sea_video {
+        width: 230px;
         position: relative;
-        bottom: 200px;
-        text-align: center;
     }
 
     .video>.sea_video>video {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         position: relative;
         overflow: hidden;
         object-fit: fill;
         border-radius: 100%;
         transition: 1s;
+        border: 5px solid rgba(255, 96, 56, 0.1);
+        left: 550px;
+        z-index: 100;
     }
 
     .video>.sea_video>video:hover {
-        width: 500px;
+        width: 800px;
+        height: 500px;
         position: relative;
         border-radius: 5%;
-        transform: scale(1.5);
         transition: 1s;
+        transform: translateX(-280px);
+        cursor: pointer;
+        border: 3px solid rgba(255, 255, 255, 0.1);
     }
 
+    .video>.sea_video2 {
+        width: 230px;
+        position: relative;
+    }
+
+    .video>.sea_video2>video {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        object-fit: fill;
+        border-radius: 100%;
+        transition: 1s;
+        border: 5px solid rgba(255, 96, 56, 0.1);
+        left: 550px;
+        top: 300px;
+        z-index: 100;
+    }
+
+    .video>.sea_video2>video:hover {
+        width: 800px;
+        height: 500px;
+        position: relative;
+        border-radius: 5%;
+        transition: 1s;
+        transform: translateX(-280px);
+        cursor: pointer;
+        border: 3px solid rgba(255, 255, 255, 0.1);
+    }
 
 }
 
@@ -516,5 +557,6 @@
         border-radius: 5%;
         transform: scale(1.5);
         transition: 1s;
+        
     }
 }

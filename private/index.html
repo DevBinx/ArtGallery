@@ -20,7 +20,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         $(document).ready(function () {
-            $("#header_nav").load("header_nav.html")
+            $("#header_nav").load("p_header_nav.html");
         });
     </script>
 </head>
@@ -44,13 +44,15 @@
             <video muted loop width="100%" onmouseover="this.play()" onmouseout="this.pause()">
                 <source src="../Videos/sea-video.mp4" type="video/mp4">
             </video>
+            <p style="color: white;">다시 바다로</p>
         </div>
 
+        <div class="sea_video2">
+            <video muted loop width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+                <source src="../Videos/sea-video.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
-
-    <script>
-        AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
-    </script>
 </body>
 
 </html>
