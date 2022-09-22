@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/main_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@100&display=swap"
+        rel="stylesheet">
+        <!-- 애플고딕 -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+    <script src="../jQuery/jQuery-3.6.1.js"></script>
+    <script>
+
+    $('#reset-icon>img').hide();
+
+        $('.search').click(function(){
+            $('#search-icon').hide();
+            $('.search').css({
+                "padding" : "0 10px",
+                "width" : "360px"
+            });
+            $('#reset-icon>img').show();
+        });
+
+        $('.search').keyup(function(e){
+            if(e.keyCode == 13) {
+                alert("검색");
+            }
+        });
+
+        $('#reset-icon>img').click(function(){
+            $('.search').val("");
+            $('#search-icon').show();
+            $('#reset-icon>img').hide();
+            $('.search').css({
+                "padding" : "0 40px",
+                "width" : "300px"
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <nav id="header_nav">
+        <p class="p-artgallery"><a href="../HTML/index.html">ArtGallery</a></p>
+            <div id="search-icon">
+                <img src="../IMAGE/search-icon.png" alt="">
+            </div>
+            <div id="reset-icon">
+                <img src="../IMAGE/reset-icon.png" alt="">
+            </div>
+            <p class="p_Mainheader_search">
+                <input type="text" class="search" placeholder="검색" onclick="search_click()">
+            </p>
+    </nav>
+</body>
+</html>
