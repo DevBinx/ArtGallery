@@ -10,37 +10,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@100&display=swap"
+        rel="stylesheet">
     <!-- 애플고딕 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
     <link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
     <script src="../jQuery/jQuery-3.6.1.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        $(document).ready(function(){
+        AOS.init();
+    </script>
+    <script>
+        $(document).ready(function () {
             $("#header_nav").load("header_nav.html");
         });
     </script>
 </head>
 
 <body>
-    <div id="header_nav">
+
+        <div id="header_nav">
+
+        </div>
+        <div class="main_header">
+            ArtGallery.
+        </div>
+
+        <div class="header_video">
+            <video muted autoplay loop width="100%">
+                <source src="../Videos/header_video2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="p_Mainheader sticky">
+            <p>
+                <strong>Vincent Van Gogh, Leonardo da Vinci</strong> 와 같은 <br>
+                <strong>한 시대를 대표하는 예술가들</strong>의 작품들.
+            </p>
+        </div>
+
+
+
+    <div id="cont2" style="background-color: white;">
 
     </div>
-    <div class="main_header">
-        <h1>ArtGallery.</h1>
-    </div>
 
-    <div class="header_video">
-        <video muted autoplay loop width="100%">
-            <source src="../Videos/header_video2.mp4" type="video/mp4">
-        </video>
-    </div>
 
-    <p class="p_Mainheader">
-        <strong>Vincent Van Gogh, Leonardo da Vinci</strong> 와 같은 <strong>한 시대를 대표하는 예술가들</strong>의 작품들.
-    </p>
-
-    <div class="Sunflowers">
+    <!-- <div class="Sunflowers">
         <img src="../IMAGE/Vincent_van_Gogh_Sunflowers.jpg" id="img" alt="" width="300px" />
         <p class="p_Sunflowers">Sunflowers (1887) <br>
             Vincent Willem Van Gogh
@@ -52,7 +68,7 @@
         <p class="p_Monarisa">Monarisa (1503) <br>
             Leonardo da Vinci
         </p>
-    </div>
+    </div> -->
 </body>
 
 </html>
